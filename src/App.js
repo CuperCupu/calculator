@@ -6,7 +6,7 @@ import Main from './containers/Main';
 
 function App() {
   return (
-    <Router>
+    <Router className="App">
       <Route path="/" component={Main}/>
       <Route path="/credits" component={Credits}/>
     </Router>

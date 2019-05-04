@@ -13,7 +13,14 @@ let mainWindow;
 
 function createWindow() {
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 800, height: 600});
+    mainWindow = new BrowserWindow({
+        title: "Calculator",
+        width: 200,
+        height: 250,
+        resizable: false,
+        fullscreen: false,
+        icon: path.join(__dirname, "../public/icon.png")
+    });
 
     // and load the index.html of the app.
     console.log(process.env.ELECTRON_START_URL);
@@ -25,7 +32,7 @@ function createWindow() {
     mainWindow.loadURL(startUrl);
 
     // Open the DevTools.
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {

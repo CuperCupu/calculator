@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Calculator from '../controllers/Calculator'
+import Calculator from './Calculator'
 import '../themes/dark.css';
 import Button from 'react-bootstrap/Button';
 
@@ -15,9 +15,8 @@ class Main extends Component {
 
     render() {
         return (
-            <div className="App">
-                <h1>Calculator</h1>
-                <Button onClick={this.clicked.bind(this)}>Teks</Button>
+            <div>
+                <Calculator/>
             </div>
         );
     }
