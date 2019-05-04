@@ -1,0 +1,11 @@
+{
+  "name": "calculator",
+  "version": "0.0.1",
+  "description": "A simple calculator made with electron and reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"hello\""
+  },
+  "author": "Suhendi",
+  "license": "MIT"
+}
