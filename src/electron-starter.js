@@ -19,13 +19,13 @@ function createWindow() {
         height: 250,
         resizable: false,
         fullscreen: false,
-        icon: path.join(__dirname, "../public/icon.png")
+        icon: path.join(__dirname, "../build/icon.png")
     });
 
     // and load the index.html of the app.
     console.log(process.env.ELECTRON_START_URL);
     const startUrl = process.env.ELECTRON_START_URL || url.format({
-        pathname: path.join(__dirname, '/../build/index.html'),
+        pathname: path.join(__dirname, '../build/index.html'),
         protocol: 'file:',
         slashes: true
     });
