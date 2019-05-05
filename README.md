@@ -11,7 +11,7 @@ $ make
 ```
 
 ## Author
-Suhendi
-Informatics
-Bandung Institute of Technology
+Suhendi <br>
+Informatics <br>
+Bandung Institute of Technology <br>
 suhendi999@gmail.com
